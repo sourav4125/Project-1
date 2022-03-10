@@ -1,5 +1,5 @@
-# radium
-Repository for backend cohort - Radium
+# Thorium
+Repository for backend cohort - Thorium
 
 ## Blogging Site Mini Project Requirement
 

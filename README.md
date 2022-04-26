@@ -1,5 +1,6 @@
-# Thorium
-Repository for backend cohort - Thorium
+# Uranium
+
+Repository for backend cohort - Uranium
 
 ## Blogging Site Mini Project Requirement
 

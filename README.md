@@ -86,6 +86,7 @@ Refer below sample
 
 ## Response
 
+
 ### Successful Response structure
 ```yaml
 {

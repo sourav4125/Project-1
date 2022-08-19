@@ -60,7 +60,7 @@ example of a query url: blogs?filtername=filtervalue&f2=fv2
 - Add authentication and authroisation feature
 
 ### POST /login
-- Allow an author to login with their email and password. On a successful login attempt return a JWT token contatining the authorId
+- Allow an author to login with their email and password. On a successful login attempt return a JWT token contatining the authorId in response body like [this](#Successful-login-Response-structure)
 - If the credentials are incorrect return a suitable error message with a valid HTTP status code
 
 ### Authentication
@@ -125,7 +125,17 @@ Refer below sample
   "updatedAt": "2021-09-17T04:25:07.803Z",
 }
 ```
+ ```
+### Successful Login Response structure
+```yaml
+{
+  status: true,
+  data: {
+   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjYyZmUzYmUzMzY2ZmFkNDZjY2Q1MzI3ZiIsImlhdCI6MTY2MDgzMDA4MywiZXhwIjoxNjYwODY2MDgzfQ.mSo-TLyRlGhMNcy4ftEvvIlCHlyEqpaFZc-iBth4lfg"
 
+  }
+}
+```
 #### Refer https://jsonplaceholder.typicode.com/guide/ for some fake blogs data.
 
 #### Note: Create a group database and use the same database in connection string by replacing `groupXDatabase

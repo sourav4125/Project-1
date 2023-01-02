@@ -4,7 +4,7 @@ const authorController=require("../controller/authorController")
 const blogController=require("../controller/blogController")
 router.post("/authors",authorController.authorCreate)
 router.post("/blogs",blogController.blogCreate)
-
-
+router.get("/getBlog",blogController.getData)
+router.put("/update/:blogId",blogController.updateData)
 
 module.exports=router

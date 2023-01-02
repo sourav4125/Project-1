@@ -33,7 +33,8 @@ const blogSchema = new mongoose.Schema({
         default: false
     },
     publishedAt: {
-        type: String
+        type: String,
+        date:Date(Date.now())
         
     },
     isPublished: {

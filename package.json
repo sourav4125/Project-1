@@ -1,0 +1,19 @@
+{
+  "name": "californium",
+  "version": "1.0.0",
+  "description": "our first blog api's",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabihak89/californium.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sabihak89/californium/issues"
+  },
+  "homepage": "https://github.com/sabihak89/californium#readme"
+}

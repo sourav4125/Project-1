@@ -1,7 +1,4 @@
 
-
-
-
 const mongoose=require("mongoose")
 const validateEmail = (email) => {
     return String(email)

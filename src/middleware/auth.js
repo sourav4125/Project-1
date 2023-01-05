@@ -36,7 +36,7 @@ const authorisation = async function (req, res, next) {
         let modifiedid=req.params.blogId
         console.log("blog",modifiedid)
         let autherid=decodedToken.authorId     
-        console.log("token",autherid) 
+        console.log("token",autherid)
         if (modifiedid != autherid) {
             res.status(404).send({ msg: "invalid author id" })
         }else{

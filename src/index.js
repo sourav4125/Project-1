@@ -8,7 +8,7 @@ const {default:mongoose}=require("mongoose")
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({extended:true}))
 mongoose.connect("mongodb+srv://Sakshi:monday123@cluster0.z5dpz2x.mongodb.net/project-1",
-{useNewUrlParser:true}).then( ()=>console.log("MongoDb is connected")).catch(err=>console.log(err))
+{useNewUrlParser:true},mongoose.set("strictQuery",true)).then( ()=>console.log("MongoDb is connected")).catch(err=>console.log(err))
 
 app.use('/',route)
 

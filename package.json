@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/sabihak89/californium/issues"
   },
-  "homepage": "https://github.com/sabihak89/californium#readme"
+  "homepage": "https://github.com/sabihak89/californium#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "mongoose": "^6.8.2"
+  }
 }

@@ -5,12 +5,13 @@ const blogController=require("../controller/blogController")
 const auth=require("../middleware/auth")
 
 router.post("/authors",authorController.authorCreate)
-router.post("/blogs",blogController.blogCreate)
-router.get("/getBlog",blogController.getData)
-router.put("/update/:blogId",auth.authetication,auth.authorisation,blogController.updateData)
-router.delete("/blogs/:blogId",blogController.deleteData)
-router.delete("/blogs1",blogController.deleteData1)
-router.post("/token",authorController.authorLogin)
+router.post("/login",authorController.authorLogin)
+router.post("/blogs",auth.authetication,blogController.blogCreate)
+router.get("/blogs",auth.authetication,blogController.getData)
+router.put("/blogs/:blogId",auth.authetication,auth.authorisation,blogController.updateData)
+router.delete("/blogs/:blogId",auth.authetication,auth.authorisation,blogController.deleteData)
+router.delete("/blogs1",auth.authetication,blogController.deleteData1)
+
 
 
 module.exports=router
